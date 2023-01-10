@@ -1,0 +1,121 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.jpg" width="60" height="60"" alt=""></a>
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="menu">
+						<a href="gallery.html">Gallery</a>
+						<ul class="primary">
+							<li>
+								<a href="proj1.html">proj 1</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="blog.html">Blog</a>
+						<ul class="secondary">
+							<li>
+								<a href="singlepost.html">Single post</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+</style>
+</head>
+<body>
+
+<a name="first_anchor"></a>
+
+<div class="topnav">
+  
+  <a class="active" href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Education.html">Education</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<center><img src="assest/welcome.gif" alt="HELLO and Welcome" 
+style="width:60%;height:60%;"> </center>
+
+<br><br><br><br>
+
+<center><h1 id="current-time">00:00:00</h1> 
+   </div>
+
+<script>
+   let time = document.getElementById("current-time");
+
+
+   setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+   },1000)
+</script></center>
+
+<center><audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="assest/music.mp3">
+  Your browser does not support the audio element.
+</audio></center>
+<b>
+
+<center><p>Under The Influence<sub>Chris Brown</sub></p></center>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a href="#first_anchor"><image src="assest/image/arrow.png" width="5%"></a>
+
+<footer>
+  <p>Prepared by:Nur Zafirah <image src="assest/image/rose logo.jpeg" width="5%"></p>
+</footer>
+
+</body>
+</html>
